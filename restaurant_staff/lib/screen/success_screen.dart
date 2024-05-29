@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:lottie/lottie.dart';
+import 'package:restaurant_staff/screen/log_in_screen.dart';
+import 'package:restaurant_staff/screen/navigation_screen/navigator_screen.dart';
+import 'package:restaurant_staff/screen/onboard_screen/onboard_screen.dart';
 
 import 'home_screen/home_screen.dart';
 
@@ -23,9 +26,9 @@ class _VerifiedState extends State<Verified> {
           children: [
             Center(
               child: Padding(
-                padding: const EdgeInsets.all(40.0),
+                padding:  EdgeInsets.all(40.0),
                 child: Container(
-                  padding: const EdgeInsets.symmetric(
+                  padding:  EdgeInsets.symmetric(
                     vertical: Verified._verticalPadding,
                     horizontal: Verified._horizontalPadding,
                   ),
@@ -43,7 +46,7 @@ class _VerifiedState extends State<Verified> {
                       Container(
                         width: 90,
                         height: 90,
-                        decoration: const BoxDecoration(
+                        decoration:  BoxDecoration(
                           shape: BoxShape.circle,
 
                           color: Color(
@@ -58,7 +61,7 @@ class _VerifiedState extends State<Verified> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      const Text(
+                       Text(
                         "You're Verified !!!",
                         style: TextStyle(
                           fontSize: 24,
@@ -66,7 +69,7 @@ class _VerifiedState extends State<Verified> {
                         ),
                       ),
                       const SizedBox(height: 10),
-                      const Text(
+                       Text(
                         "Hurrah !! You have successfully \nverified the account.",
                         textAlign: TextAlign.center,
                         style: TextStyle(
@@ -75,9 +78,11 @@ class _VerifiedState extends State<Verified> {
                           color: Colors.grey,
                         ),
                       ),
-                      const SizedBox(height: 20),
+                       SizedBox(height: 20),
                       ElevatedButton(
-                        onPressed: ()=>Get.to(()=>HomeScreen()),
+                        onPressed: (){
+                          Get.back();
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xff304FFE),
                         ),
