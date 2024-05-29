@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:restaurant_staff/screen/navigation_screen/navigator_screen.dart';
 
 import '../custombutton.dart';
 import '../form_validators.dart';
@@ -66,7 +68,7 @@ class _LoginFormState extends State<LoginForm> {
               ),
               CustomButton(
                 text: 'Log in',
-                onTap: () {},
+                onTap: ()=>Get.to(()=>NavigationScreen()),
               ),
             ],
           ),
