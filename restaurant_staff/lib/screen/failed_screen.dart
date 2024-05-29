@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:restaurant_staff/screen/log_in_screen.dart';
 
 class Failed extends StatefulWidget {
   const Failed({super.key});
@@ -69,9 +71,7 @@ class _FailedState extends State<Failed> {
                   ),
                   const SizedBox(height: 20),
                   ElevatedButton(
-                    onPressed: () {
-                      // Add your navigation or any other logic here
-                    },
+                    onPressed: ()=>Get.to(()=>LoginScreen()),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: const Color(0xff304FFE),
                     ),

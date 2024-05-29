@@ -7,14 +7,14 @@ import 'package:get/get.dart';
 import '../onboard_screen/onboard_screen.dart';
 
 
-class StaffName extends StatefulWidget {
-  const StaffName({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
 
   @override
-  State<StaffName> createState() => _StaffNameState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _StaffNameState extends State<StaffName> {
+class _HomeScreenState extends State<HomeScreen> {
   bool isCheck = false;
   late int _groupValue;
   @override
@@ -26,22 +26,8 @@ class _StaffNameState extends State<StaffName> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-        Row(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Container(
-            height: 30,
-            width: 30,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white,
-              border: Border.all(color: Colors.black54),
-            ),
-            child: Center(child: Icon(Icons.keyboard_arrow_left,color: Colors.black,),),
-          ),
-          SizedBox(width: MediaQuery.of(context).size.width*0.30,),
-          Column(
+        Center(
+          child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -55,9 +41,8 @@ class _StaffNameState extends State<StaffName> {
                 style: TextStyle(fontSize: 20,fontWeight: FontWeight.w900,color: Colors.black),)
             ],
           ),
-          SizedBox(height: 20,),
-        ],
-      ),
+        ),
+        SizedBox(height: 20,),
       SizedBox(height: 150,),
           Center(
             child: GestureDetector(

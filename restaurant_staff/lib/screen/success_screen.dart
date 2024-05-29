@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:lottie/lottie.dart';
+
+import 'home_screen/home_screen.dart';
 
 class Verified extends StatefulWidget {
   const Verified({super.key});
@@ -73,9 +77,7 @@ class _VerifiedState extends State<Verified> {
                       ),
                       const SizedBox(height: 20),
                       ElevatedButton(
-                        onPressed: () {
-                          // Add your navigation or any other logic here
-                        },
+                        onPressed: ()=>Get.to(()=>HomeScreen()),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xff304FFE),
                         ),

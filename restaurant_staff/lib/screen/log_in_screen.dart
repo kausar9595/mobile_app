@@ -77,20 +77,6 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                TextButton(
-                  onPressed: () {
-                    Get.to(const Verified());
-                  },
-                  child: const Text("Verified screen"),
-                ),
-                const SizedBox(height: 20),
-                TextButton(
-                  onPressed: () {
-                    Get.to(const Failed());
-                  },
-                  child: const Text("Failed Screen"),
-                ),
-                const SizedBox(height: 10),
               ],
             ),
           ),
