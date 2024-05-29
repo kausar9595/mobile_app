@@ -23,46 +23,22 @@ class _SignupScreenState extends State<SignupScreen> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(height: 15),
-              Stack(
-                alignment: Alignment.center,
-                children: [
-                  const Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Text(
-                        "You Are Welcome to Join Us!",
-                        style: TextStyle(fontSize: 16),
-                      ),
-                      Text(
-                        "Register",
-                        style: TextStyle(
-                            fontSize: 28, fontWeight: FontWeight.w700),
-                      ),
-                    ],
-                  ),
-                  Positioned(
-                    left: 0,
-                    child: InkWell(
-                      onTap: () => Get.back(),
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(
-                            color: Colors.black,
-                            width: 0.2,
-                          ),
-                          color: Colors.white,
-                        ),
-                        child: const Icon(
-                          Icons.chevron_left,
-                          size: 30,
-                        ),
-                      ),
+               Center(
+                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "You Are Welcome to Join Us!",
+                      style: TextStyle(fontSize: 16),
                     ),
-                  ),
-                ],
-              ),
+                    Text(
+                      "Register",
+                      style: TextStyle(
+                          fontSize: 28, fontWeight: FontWeight.w700),
+                    ),
+                  ],
+                               ),
+               ),
               const SizedBox(height: 24),
               Expanded(
                 child: SingleChildScrollView(

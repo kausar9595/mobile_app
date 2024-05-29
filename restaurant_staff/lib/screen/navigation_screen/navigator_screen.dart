@@ -47,7 +47,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
             selectedLabelStyle:const TextStyle(color: Colors.indigoAccent),
             unselectedItemColor: Colors.black,
             unselectedLabelStyle:const TextStyle(color:Colors.black),
-            items:const [
+            items: [
               BottomNavigationBarItem(
 
                 icon: Icon(Icons.home_filled),

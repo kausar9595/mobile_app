@@ -10,8 +10,11 @@ class RankingScreen extends StatefulWidget {
 class _RankingScreenState extends State<RankingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
-    );
+    return const SafeArea(
+        child: Scaffold(
+      body:  Center(
+        child:  Text("Upcoming...",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600,color: Colors.black),),
+      ),
+    ));
   }
 }

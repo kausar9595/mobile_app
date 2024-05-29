@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:restaurant_staff/screen/navigation_screen/navigator_screen.dart';
 
 import '../custombutton.dart';
 import '../form_validators.dart';
@@ -93,7 +94,7 @@ class _SignupFormState extends State<SignupForm> {
               ),
               CustomButton(
                 text: 'Register',
-                onTap: () {},
+                onTap: ()=>Get.to(()=>NavigationScreen()),
               ),
             ],
           ),
